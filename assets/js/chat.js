@@ -110,7 +110,7 @@ function loadMessages() {
 		conversation.appendChild(element);
     scrollToBottom();
     animateMessage(element)
-
+    document.getElementById("input_msg").focus();
   })
 }
 
