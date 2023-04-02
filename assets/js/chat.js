@@ -69,10 +69,9 @@ function newMessage(e) {
 
 // Load messages from the database
 function loadMessages() {
-  firebase.database().ref('messages').on('child_added', function(childSnapshot) {
+  messagesRef.on('child_added', function(childSnapshot) {
     var element = document.createElement('div');
     var childData = childSnapshot.val();
-      console.log(childData)
 
     // Get username from users table
     var sender = users[childData.uid].name;
@@ -108,8 +107,8 @@ function loadMessages() {
     } else {
     	element.classList.add('message', 'received');
     }
-    scrollToBottom();
 		conversation.appendChild(element);
+    scrollToBottom();
     animateMessage(element)
 
   })
