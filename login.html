@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+</head>
+<body>
+    <form>
+        <h2>Login</h2>
+        <input type="email" placeholder="Email" id="email">
+        <input type="password" placeholder="Password" id="password">
+        <button type="button" onclick="loginUser()">Login</button>
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+    </form>
+
+    <script src="js/firebase-config.js"></script>
+    
+    <script src="js/login.js"></script>
+</body>
+</html>
