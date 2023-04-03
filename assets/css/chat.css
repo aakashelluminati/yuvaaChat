@@ -19,6 +19,7 @@
   }
   
   .page {
+    overflow: hidden;
     width: 100%;
     height: 100%;
     display: flex;
@@ -28,7 +29,6 @@
   
   .marvel-device .screen {
     text-align: left;
-    overflow: hidden;
     height: 100%;
   }
   
