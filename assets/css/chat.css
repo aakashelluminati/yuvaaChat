@@ -28,6 +28,7 @@
   
   .marvel-device .screen {
     text-align: left;
+    overflow: hidden;
     height: 100%;
   }
   
